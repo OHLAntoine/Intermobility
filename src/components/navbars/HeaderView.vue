@@ -9,7 +9,7 @@
         />
       </router-link>
     </div>
-    <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+    <button class="cursor-pointer lg:hidden block" @click="menuIsOpen = !menuIsOpen">
       <svg
         class="fill-current text-white my-3"
         xmlns="http://www.w3.org/2000/svg"
@@ -20,25 +20,21 @@
         <title>menu</title>
         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
       </svg>
-    </label>
-    <input class="hidden" type="checkbox" id="menu-toggle" />
-    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+    </button>
+    <div
+      class="lg:flex lg:items-center lg:w-auto w-full"
+      :class="{ hidden: !menuIsOpen, block: menuIsOpen }"
+    >
       <ul
         class="text-xl text-center items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex lg:pt-0"
       >
-        <li class="py-2 lg:py-0">
-          <router-link
-            :to="{ name: 'home' }"
-            class="text-white font-bold text-base flex items-center"
-          >
+        <li class="py-2 lg:py-0 px-2 rounded hover:bg-blue-900 text-white">
+          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
             Home
           </router-link>
         </li>
-        <li class="py-2 lg:py-0">
-          <router-link
-            :to="{ name: 'home' }"
-            class="text-white font-bold text-base flex items-center"
-          >
+        <li class="py-2 lg:py-0 px-2 rounded hover:bg-blue-900 text-white">
+          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
             About us
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,11 +46,8 @@
             </svg>
           </router-link>
         </li>
-        <li class="py-2 lg:py-0">
-          <router-link
-            :to="{ name: 'home' }"
-            class="text-white font-bold text-base flex items-center"
-          >
+        <li class="py-2 lg:py-0 px-2 rounded hover:bg-blue-900 text-white">
+          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
             Our Engagements
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,11 +59,8 @@
             </svg>
           </router-link>
         </li>
-        <li class="py-2 lg:py-0">
-          <router-link
-            :to="{ name: 'home' }"
-            class="text-white font-bold text-base flex items-center"
-          >
+        <li class="py-2 lg:py-0 px-2 rounded hover:bg-blue-900 text-white">
+          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
             How we can help you
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -82,11 +72,8 @@
             </svg>
           </router-link>
         </li>
-        <li class="py-2 lg:py-0">
-          <router-link
-            :to="{ name: 'home' }"
-            class="text-white font-bold text-base flex items-center"
-          >
+        <li class="py-2 lg:py-0 px-2 rounded hover:bg-blue-900 text-white">
+          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
             Articles
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -98,11 +85,8 @@
             </svg>
           </router-link>
         </li>
-        <li class="py-2 lg:py-0">
-          <router-link
-            :to="{ name: 'home' }"
-            class="text-white font-bold text-base flex items-center"
-          >
+        <li class="py-2 lg:py-0 px-2 rounded hover:bg-blue-900 text-white">
+          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
             They support us
           </router-link>
         </li>
@@ -113,6 +97,9 @@
 
 <script setup>
 import { RouterLink } from 'vue-router'
+import { ref } from 'vue'
+
+const menuIsOpen = ref(false)
 </script>
 
 <style scoped>
