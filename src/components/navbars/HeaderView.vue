@@ -1,6 +1,6 @@
 <template>
-  <nav class="lg:px-16 px-6 shadow-md flex flex-wrap items-center lg:py-3 py-2 header_navbar">
-    <div class="flex-1 flex justify-between items-center">
+  <nav class="px-6 lg:px-8 shadow-md flex flex-wrap items-center lg:py-3 py-2 header_navbar">
+    <div class="flex-1 flex justify-between items-center ps-2">
       <router-link :to="{ name: 'home' }">
         <img
           src="../../assets/icons/intermobilityBannier.png"
@@ -25,70 +25,161 @@
       class="lg:flex lg:items-center lg:w-auto w-full"
       :class="{ hidden: !menuIsOpen, block: menuIsOpen }"
     >
-      <ul
-        class="text-xl text-center items-center gap-x-5 pt-4 md:gap-x-4 lg:text-lg lg:flex lg:pt-0"
-      >
-        <li class="py-2 lg:py-0 px-2 rounded hover:bg-blue-900 text-white">
+      <ul class="text-xl text-center items-center pt-4 lg:text-lg lg:flex lg:pt-0">
+        <li class="py-2 lg:py-0 px-0 lg:px-2 rounded hover:text-black text-white">
           <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
             Home
           </router-link>
         </li>
-        <li class="py-2 lg:py-0 px-2 rounded hover:bg-blue-900 text-white">
-          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
+        <li class="py-2 lg:py-0 px-0 lg:px-2 rounded text-white lg:relative">
+          <div
+            class="font-bold text-base flex items-center cursor-pointer hover:text-black"
+            @click="dropdownAboutOpen = !dropdownAboutOpen"
+          >
             About us
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
-              fill="white"
+              fill="currentColor"
               class="arrow_dropdown"
             >
               <path d="M12 16L6 10H18L12 16Z"></path>
             </svg>
-          </router-link>
+          </div>
+          <ul
+            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base header_navbar"
+            :class="{ hidden: !dropdownAboutOpen, block: dropdownAboutOpen }"
+          >
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'home' }" class="text-nowrap">Founding Team</router-link>
+            </li>
+            <li class="lg:border lg:border-white"></li>
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'home' }">Expertises</router-link>
+            </li>
+          </ul>
         </li>
-        <li class="py-2 lg:py-0 px-2 rounded hover:bg-blue-900 text-white">
-          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
-            Our Engagements
+        <li class="py-2 lg:py-0 px-0 lg:px-2 rounded text-white lg:relative">
+          <div
+            class="font-bold text-base flex items-center cursor-pointer hover:text-black"
+            @click="dropdownEngagementOpen = !dropdownEngagementOpen"
+          >
+            Our engagements
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
-              fill="white"
+              fill="currentColor"
               class="arrow_dropdown"
             >
               <path d="M12 16L6 10H18L12 16Z"></path>
             </svg>
-          </router-link>
+          </div>
+          <ul
+            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base header_navbar"
+            :class="{ hidden: !dropdownEngagementOpen, block: dropdownEngagementOpen }"
+          >
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'home' }">Webinars</router-link>
+            </li>
+            <li class="lg:border lg:border-white"></li>
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'home' }">Conferences</router-link>
+            </li>
+            <li class="lg:border lg:border-white"></li>
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'home' }" class="text-nowrap"
+                >Reports & White papers</router-link
+              >
+            </li>
+          </ul>
         </li>
-        <li class="py-2 lg:py-0 px-2 rounded hover:bg-blue-900 text-white">
-          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
-            How we can help you
+        <li class="py-2 lg:py-0 px-0 lg:px-2 rounded text-white lg:relative">
+          <div
+            class="font-bold text-base flex items-center cursor-pointer hover:text-black"
+            @click="dropdownActionOpen = !dropdownActionOpen"
+          >
+            Our actions
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
-              fill="white"
+              fill="currentColor"
               class="arrow_dropdown"
             >
               <path d="M12 16L6 10H18L12 16Z"></path>
             </svg>
-          </router-link>
+          </div>
+          <ul
+            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base header_navbar"
+            :class="{ hidden: !dropdownActionOpen, block: dropdownActionOpen }"
+          >
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'home' }" class="text-nowrap">Support call</router-link>
+            </li>
+            <li class="lg:border lg:border-white"></li>
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'home' }" class="text-nowrap"
+                >Consulting project</router-link
+              >
+            </li>
+            <li class="lg:border lg:border-white"></li>
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'home' }" class="text-nowrap">Dedicated event</router-link>
+            </li>
+          </ul>
         </li>
-        <li class="py-2 lg:py-0 px-2 rounded hover:bg-blue-900 text-white">
-          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
-            Articles
+        <li class="py-2 lg:py-0 px-0 lg:px-2 rounded text-white lg:relative">
+          <div
+            class="font-bold text-base flex items-center cursor-pointer hover:text-black"
+            @click="dropdownMediaOpen = !dropdownMediaOpen"
+          >
+            Our medias
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
-              fill="white"
+              fill="currentColor"
               class="arrow_dropdown"
             >
               <path d="M12 16L6 10H18L12 16Z"></path>
             </svg>
-          </router-link>
-        </li>
-        <li class="py-2 lg:py-0 px-2 rounded hover:bg-blue-900 text-white">
-          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
-            They support us
-          </router-link>
+          </div>
+          <ul
+            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base header_navbar"
+            :class="{ hidden: !dropdownMediaOpen, block: dropdownMediaOpen }"
+          >
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'home' }">Articles</router-link>
+            </li>
+            <li class="lg:border lg:border-white"></li>
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'home' }" class="text-nowrap">Podcasts</router-link>
+            </li>
+            <li class="lg:border lg:border-white"></li>
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'home' }" class="text-nowrap">Books</router-link>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -100,13 +191,14 @@ import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 
 const menuIsOpen = ref(false)
+
+const dropdownAboutOpen = ref(false)
+const dropdownEngagementOpen = ref(false)
+const dropdownActionOpen = ref(false)
+const dropdownMediaOpen = ref(false)
 </script>
 
 <style scoped>
-#menu-toggle:checked + #menu {
-  display: block;
-}
-
 .intermobility_logo {
   height: 2.5rem;
   scale: 1.5;
