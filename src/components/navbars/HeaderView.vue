@@ -34,7 +34,12 @@
         <li class="py-2 lg:py-0 px-0 lg:px-2 rounded text-white lg:relative">
           <div
             class="font-bold text-base flex items-center cursor-pointer hover:text-black"
-            @click="dropdownAboutOpen = !dropdownAboutOpen"
+            @click="
+              (dropdownAboutOpen = !dropdownAboutOpen),
+                (dropdownEngagementOpen = false),
+                (dropdownActionOpen = false),
+                (dropdownMediaOpen = false)
+            "
           >
             About us
             <svg
@@ -66,7 +71,12 @@
         <li class="py-2 lg:py-0 px-0 lg:px-2 rounded text-white lg:relative">
           <div
             class="font-bold text-base flex items-center cursor-pointer hover:text-black"
-            @click="dropdownEngagementOpen = !dropdownEngagementOpen"
+            @click="
+              (dropdownEngagementOpen = !dropdownEngagementOpen),
+                (dropdownAboutOpen = false),
+                (dropdownActionOpen = false),
+                (dropdownMediaOpen = false)
+            "
           >
             Our engagements
             <svg
@@ -106,7 +116,12 @@
         <li class="py-2 lg:py-0 px-0 lg:px-2 rounded text-white lg:relative">
           <div
             class="font-bold text-base flex items-center cursor-pointer hover:text-black"
-            @click="dropdownActionOpen = !dropdownActionOpen"
+            @click="
+              (dropdownActionOpen = !dropdownActionOpen),
+                (dropdownAboutOpen = false),
+                (dropdownEngagementOpen = false),
+                (dropdownMediaOpen = false)
+            "
           >
             Our actions
             <svg
@@ -146,7 +161,12 @@
         <li class="py-2 lg:py-0 px-0 lg:px-2 rounded text-white lg:relative">
           <div
             class="font-bold text-base flex items-center cursor-pointer hover:text-black"
-            @click="dropdownMediaOpen = !dropdownMediaOpen"
+            @click="
+              (dropdownMediaOpen = !dropdownMediaOpen),
+                (dropdownAboutOpen = false),
+                (dropdownEngagementOpen = false),
+                (dropdownActionOpen = false)
+            "
           >
             Our medias
             <svg
