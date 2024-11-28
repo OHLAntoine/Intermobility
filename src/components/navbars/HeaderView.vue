@@ -52,7 +52,7 @@
             </svg>
           </div>
           <ul
-            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base header_navbar"
+            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base bg-[--blue-]"
             :class="{ hidden: !dropdownAboutOpen, block: dropdownAboutOpen }"
           >
             <li
@@ -89,7 +89,7 @@
             </svg>
           </div>
           <ul
-            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base header_navbar"
+            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base bg-[--blue-]"
             :class="{ hidden: !dropdownEngagementOpen, block: dropdownEngagementOpen }"
           >
             <li
@@ -134,7 +134,7 @@
             </svg>
           </div>
           <ul
-            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base header_navbar"
+            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base bg-[--blue-]"
             :class="{ hidden: !dropdownActionOpen, block: dropdownActionOpen }"
           >
             <li
@@ -179,7 +179,7 @@
             </svg>
           </div>
           <ul
-            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base header_navbar"
+            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base bg-[--blue-]"
             :class="{ hidden: !dropdownMediaOpen, block: dropdownMediaOpen }"
           >
             <li
