@@ -23,6 +23,7 @@
     </div>
   </section>
   <section
+    id="engagements"
     class="flex flex-col md:flex-row gap-8 md:gap-0 justify-around px-6 lg:px-8 py-20 bg-[--blue-]"
   >
     <div class="flex flex-col items-center justify-center gap-8 w-full md:w-1/2 text-white">

@@ -95,19 +95,33 @@
             <li
               class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
             >
-              <router-link :to="{ name: 'home' }">Webinars</router-link>
+              <router-link
+                :to="{ name: 'home' }"
+                v-scroll-to="'#engagements'"
+                @click="store.setCurrentSlide(0)"
+                >Webinars</router-link
+              >
             </li>
             <li class="lg:border lg:border-white"></li>
             <li
               class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
             >
-              <router-link :to="{ name: 'home' }">Conferences</router-link>
+              <router-link
+                :to="{ name: 'home' }"
+                v-scroll-to="'#engagements'"
+                @click="store.setCurrentSlide(1)"
+                >Conferences</router-link
+              >
             </li>
             <li class="lg:border lg:border-white"></li>
             <li
               class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
             >
-              <router-link :to="{ name: 'home' }" class="text-nowrap"
+              <router-link
+                :to="{ name: 'home' }"
+                v-scroll-to="'#engagements'"
+                class="text-nowrap"
+                @click="store.setCurrentSlide(2)"
                 >Reports & White papers</router-link
               >
             </li>
@@ -221,6 +235,9 @@ const dropdownAboutOpen = ref(false)
 const dropdownEngagementOpen = ref(false)
 const dropdownActionOpen = ref(false)
 const dropdownMediaOpen = ref(false)
+
+import { useMobilityStore } from '@/stores'
+const store = useMobilityStore()
 </script>
 
 <style scoped>
