@@ -1,5 +1,5 @@
 <template>
-  <nav class="px-6 lg:px-8 shadow-md flex flex-wrap items-center lg:py-3 py-2 header_navbar">
+  <nav class="px-6 lg:px-8 shadow-md flex flex-wrap items-center lg:py-3 py-2 bg-[--blue-]">
     <div class="flex-1 flex justify-between items-center ps-2">
       <router-link :to="{ name: 'home' }">
         <img
@@ -200,6 +200,11 @@
               <router-link :to="{ name: 'home' }" class="text-nowrap">Books</router-link>
             </li>
           </ul>
+        </li>
+        <li class="py-2 lg:py-0 px-0 lg:px-2 rounded hover:text-black text-white">
+          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
+            Contact us
+          </router-link>
         </li>
       </ul>
     </div>

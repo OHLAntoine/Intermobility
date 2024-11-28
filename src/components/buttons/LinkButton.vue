@@ -1,7 +1,7 @@
 <template>
   <router-link
     :to="{ name: pathName }"
-    class="max-w-fit px-8 py-4 rounded text-xl font-bold text-nowrap"
+    class="max-w-fit px-6 py-3 rounded text-xl font-bold text-nowrap"
     :class="buttonClass"
   >
     <slot></slot>

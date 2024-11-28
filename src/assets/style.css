@@ -23,12 +23,6 @@ body {
   --dark_blue-: rgb(0, 60, 138);
 }
 
-/* Header */
-
-.header_navbar {
-  background-color: var(--blue-);
-}
-
 /* Buttons */
 
 .blue_button {
@@ -37,4 +31,10 @@ body {
 }
 .blue_button:hover {
   background-color: var(--dark_blue-);
+}
+
+/* sections */
+
+.blue_section {
+  background-color: var(--blue-);
 }

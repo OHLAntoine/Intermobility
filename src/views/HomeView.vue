@@ -22,10 +22,31 @@
       </div>
     </div>
   </section>
+  <section
+    class="flex flex-col md:flex-row gap-8 md:gap-0 justify-around px-6 lg:px-8 py-20 bg-[--blue-]"
+  >
+    <div class="flex flex-col items-center justify-center gap-8 w-full md:w-1/2 text-white">
+      <h2 class="font-bold text-5xl text-center">Our Expertise: An Overview</h2>
+      <p class="text-xl text-center px-12">
+        InterMobility stands out as a premier expert network, facilitating meaningful interactions
+        and collaborations among leaders. We provide a vibrant platform for networking, sharing
+        insights, and advancing knowledge through diverse events, working groups, and publications.
+      </p>
+    </div>
+    <carousel-images
+      class="w-full md:w-1/2 lg:w-[45%]"
+      :currentSlide="store.currentSlide"
+      :slides="store.slidesCarousel"
+    />
+  </section>
 </template>
 
 <script setup>
 import LinkButton from '@/components/buttons/LinkButton.vue'
+import CarouselImages from '@/components/carousels/CarouselImages.vue'
+
+import { useMobilityStore } from '@/stores'
+const store = useMobilityStore()
 </script>
 
 <style scoped>
