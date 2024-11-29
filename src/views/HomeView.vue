@@ -6,22 +6,18 @@
       class="w-3/4 md:w-1/2 absolute bottom-[5%] left-[12.5%] md:left-1/4"
     />
   </section>
-  <section class="grid grid-cols-11 p-20 text-center">
-    <div class="col-start-3 col-span-7 grid grid-rows-4">
-      <h1 class="font-semibold text-5xl text-center">A free european network for all</h1>
-      <p class="text-xl">
-        InterMobility champions a free European network, fostering collaboration, events, and
-        innovative problem-solving among industry experts and leaders. We believe in the value of
-        free exchange.
-      </p>
-      <p class="font-bold text-xl pt-4">
-        Join us today and be part of the mobility revolution in Europe !
-      </p>
-      <div class="text-center">
-        <link-button pathName="home" buttonClass="blue_button">Join us</link-button>
-      </div>
-    </div>
-  </section>
+  <simple-section>
+    <h1 class="font-semibold text-5xl text-center">A free european network for all</h1>
+    <p class="text-xl lg:w-2/3">
+      InterMobility champions a free European network, fostering collaboration, events, and
+      innovative problem-solving among industry experts and leaders. We believe in the value of free
+      exchange.
+    </p>
+    <p class="font-bold text-xl">
+      Join us today and be part of the mobility revolution in Europe !
+    </p>
+    <link-button pathName="home" buttonClass="blue_button">Join us</link-button>
+  </simple-section>
   <double-section id="engagements" class="bg-[--blue-]">
     <div class="flex flex-col items-center justify-center gap-8 w-full md:w-1/2 text-white">
       <h2 class="font-bold text-5xl text-center">Our Expertise: An Overview</h2>
@@ -76,6 +72,7 @@
 
 <script setup>
 import LinkButton from '@/components/buttons/LinkButton.vue'
+import SimpleSection from '@/components/sections/SimpleSection.vue'
 import DoubleSection from '@/components/sections/DoubleSection.vue'
 import CarouselImages from '@/components/carousels/CarouselImages.vue'
 
