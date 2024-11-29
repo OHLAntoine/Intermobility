@@ -22,10 +22,7 @@
       </div>
     </div>
   </section>
-  <section
-    id="engagements"
-    class="flex flex-col md:flex-row gap-8 md:gap-0 justify-around px-6 lg:px-8 py-20 bg-[--blue-]"
-  >
+  <double-section id="engagements" class="bg-[--blue-]">
     <div class="flex flex-col items-center justify-center gap-8 w-full md:w-1/2 text-white">
       <h2 class="font-bold text-5xl text-center">Our Expertise: An Overview</h2>
       <p class="text-xl text-center px-12">
@@ -39,11 +36,47 @@
       :currentSlide="store.currentSlide"
       :slides="store.slidesCarousel"
     />
-  </section>
+  </double-section>
+  <double-section>
+    <div class="flex flex-col items-center justify-center gap-8 w-full md:w-1/2">
+      <h2 class="font-bold text-5xl text-center md:px-4">
+        Empower Your Business with InterMobility: we support you
+      </h2>
+      <p class="text-xl text-center px-12">
+        InterMobility, a European network rich in expertise, insights, and know-how from top
+        automotive and mobility leaders, is dedicated to supporting companies at every stage, from
+        ideation to refining processes.
+      </p>
+    </div>
+    <ul class="flex flex-col justify-between w-full md:w-1/2 gap-4 border-2 p-4 rounded">
+      <li class="border-b-2 pb-4">
+        <h3 class="text-3xl font-bold">Support call</h3>
+        <p class="text-xl">
+          Engage in a complimentary consultation call with one of our seasoned experts to address
+          any specific needs or challenges your company may be facing.
+        </p>
+      </li>
+      <li class="border-b-2 pb-4">
+        <h3 class="text-3xl font-bold">Consulting project</h3>
+        <p class="text-xl">
+          Collaborate closely with our experts on a tailored consulting project, whether you require
+          an external perspective or specialized leadership expertise.
+        </p>
+      </li>
+      <li>
+        <h3 class="text-3xl font-bold">Dedicated event</h3>
+        <p class="text-xl">
+          Co-create a bespoke event with our network around the future of automotive and mobility
+          with our unique network of 600+ experts and leaders.
+        </p>
+      </li>
+    </ul>
+  </double-section>
 </template>
 
 <script setup>
 import LinkButton from '@/components/buttons/LinkButton.vue'
+import DoubleSection from '@/components/sections/DoubleSection.vue'
 import CarouselImages from '@/components/carousels/CarouselImages.vue'
 
 import { useMobilityStore } from '@/stores'
