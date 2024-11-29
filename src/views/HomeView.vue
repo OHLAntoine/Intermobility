@@ -16,7 +16,7 @@
     <p class="font-bold text-xl">
       Join us today and be part of the mobility revolution in Europe !
     </p>
-    <link-button pathName="home" buttonClass="blue_button">Join us</link-button>
+    <link-button pathName="home" class="blue_button">Join us</link-button>
   </simple-section>
   <double-section id="engagements" class="bg-[--blue-]">
     <div class="flex flex-col items-center justify-center gap-8 w-full md:w-1/2 text-white">
@@ -68,6 +68,23 @@
       </li>
     </ul>
   </double-section>
+  <section class="flex flex-col items-center md:flex-row bg-[--blue-]">
+    <div class="h-[35rem] flex items-center justify-center md:justify-normal">
+      <img src="../assets/images/team/fh3.jpeg" alt="" class="h-[35rem]" />
+    </div>
+    <div class="flex flex-col justify-around items-center w-full md:w-2/3 gap-8 text-white p-20">
+      <h2 class="font-bold text-5xl text-center">
+        Discover our expert team in transportation and mobility
+      </h2>
+      <p class="text-xl text-center px-12">
+        InterMobility, your gateway to a thriving European network, connects you with leading
+        experts from the transportation, mobility, and energy sectors, all committed to fostering
+        sustainable and livable urban environments. Discover the Minds Behind InterMobility: Our
+        Founding Team and Experts.
+      </p>
+      <link-button pathName="home" class="white_button">Discover our team</link-button>
+    </div>
+  </section>
 </template>
 
 <script setup>
