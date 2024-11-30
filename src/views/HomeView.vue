@@ -1,7 +1,7 @@
 <template>
   <section class="backgroundHomeImage h-[92vh] bg-local sm:bg-fixed relative">
     <img
-      src="../assets/images/homeBanner.png"
+      src="@/assets/images/homeBanner.png"
       alt="Intermobility Banner"
       class="w-3/4 md:w-1/2 absolute bottom-[5%] left-[12.5%] md:left-1/4"
     />
@@ -17,7 +17,7 @@
       Join us today and be part of the mobility revolution in Europe !
     </p>
     <link-button
-      linkPath="https://www.linkedin.com/company/intermobility-eu/posts/?feedView=all&viewAsMember=true"
+      linkPath="https://www.linkedin.com/company/intermobility-eu/posts/"
       class="blue_button"
       >Join us</link-button
     >
@@ -74,7 +74,7 @@
   </double-section>
   <section class="flex flex-col items-center md:flex-row bg-[--blue-]">
     <div class="h-[35rem] flex items-center justify-center md:justify-normal">
-      <img src="../assets/images/team/fh3.jpeg" alt="" class="h-[35rem]" />
+      <img src="@/assets/images/team/fh3.jpeg" alt="" class="h-[35rem]" />
     </div>
     <div class="flex flex-col justify-around items-center w-full md:w-2/3 gap-8 text-white p-20">
       <h2 class="font-bold text-5xl text-center">
@@ -114,7 +114,7 @@ const store = useMobilityStore()
 
 <style scoped>
 .backgroundHomeImage {
-  background-image: url('../assets/images/homebackground.webp');
+  background-image: url('@/assets/images/homebackground.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

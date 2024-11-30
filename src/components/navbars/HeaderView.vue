@@ -3,7 +3,7 @@
     <div class="flex-1 flex justify-between items-center ps-2">
       <router-link :to="{ name: 'home' }">
         <img
-          src="../../assets/icons/intermobilityBannier.png"
+          src="@/assets/icons/intermobilityBannier.png"
           alt="Intermobility Logo"
           class="intermobility_logo"
         />
