@@ -16,7 +16,11 @@
     <p class="font-bold text-xl">
       Join us today and be part of the mobility revolution in Europe !
     </p>
-    <link-button pathName="home" class="blue_button">Join us</link-button>
+    <link-button
+      linkPath="https://www.linkedin.com/company/intermobility-eu/posts/?feedView=all&viewAsMember=true"
+      class="blue_button"
+      >Join us</link-button
+    >
   </simple-section>
   <double-section id="engagements" class="bg-[--blue-]">
     <div class="flex flex-col items-center justify-center gap-8 w-full md:w-1/2 text-white">
@@ -82,16 +86,27 @@
         sustainable and livable urban environments. Discover the Minds Behind InterMobility: Our
         Founding Team and Experts.
       </p>
-      <link-button pathName="home" class="white_button">Discover our team</link-button>
+      <router-link-button linkPath="/" class="white_button">Discover our team</router-link-button>
     </div>
   </section>
+  <double-section>
+    <podcast-link
+      v-for="(podcast, index) in store.podcasts"
+      :key="index"
+      :podcastImage="podcast.image"
+      :podcastName="podcast.name"
+      :podcastLinkPath="podcast.url"
+    ></podcast-link>
+  </double-section>
 </template>
 
 <script setup>
 import LinkButton from '@/components/buttons/LinkButton.vue'
+import RouterLinkButton from '@/components/buttons/RouterLinkButton.vue'
 import SimpleSection from '@/components/sections/SimpleSection.vue'
 import DoubleSection from '@/components/sections/DoubleSection.vue'
 import CarouselImages from '@/components/carousels/CarouselImages.vue'
+import PodcastLink from '@/components/podcasts/PodcastLink.vue'
 
 import { useMobilityStore } from '@/stores'
 const store = useMobilityStore()

@@ -22,6 +22,18 @@ export const useMobilityStore = defineStore('mobility', {
     currentSlide: 0,
     slideEffect: '',
     slideInterval: null,
+    podcasts: [
+      {
+        image: '../../src/assets/images/podcasts/the_citiesfirst_podcast_logo.jpg',
+        name: '#CitiesFirst Podcast',
+        url: 'https://open.spotify.com/show/0sazSrcIOtRJCniMv03pJr?si=a417a40a40344230&nd=1&dlsi=ef4e0b471881458f',
+      },
+      {
+        image: '../../src/assets/images/podcasts/MobilityPioneer.png',
+        name: 'Mobility Pioneer Podcast',
+        url: 'https://open.spotify.com/show/6peyf592JmgoZxXWRKwOkM?si=24c51dc91dd447b7&nd=1&dlsi=becee6470a6c4b6f',
+      },
+    ],
   }),
   getters: {},
   actions: {
