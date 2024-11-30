@@ -1,7 +1,4 @@
 <template>
-  <div class="bg-[--blue-] pb-1 pt-4 flex items-center justify-center">
-    <div class="border-[1px] border-white w-[90%]"></div>
-  </div>
   <nav class="flex items-center justify-between px-6 lg:px-8 lg:py-3 py-2 bg-[--blue-] text-white">
     <div class="flex items-center">
       <router-link :to="{ name: 'home' }">
