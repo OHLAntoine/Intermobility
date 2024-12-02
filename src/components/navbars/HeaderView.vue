@@ -264,7 +264,7 @@ const dropdownActionOpen = ref(false)
 const dropdownMediaOpen = ref(false)
 
 window.addEventListener('resize', () => {
-  if (menuIsOpen.value == true) {
+  if (window.innerWidth > 1023 && menuIsOpen.value == true) {
     menuIsOpen.value = false
   }
 })
