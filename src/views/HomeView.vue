@@ -80,7 +80,7 @@
       <h2 class="font-bold text-5xl text-center">
         Discover our expert team in transportation and mobility
       </h2>
-      <p class="text-xl text-center px-12">
+      <p class="text-xl text-center md:px-12">
         InterMobility, your gateway to a thriving European network, connects you with leading
         experts from the transportation, mobility, and energy sectors, all committed to fostering
         sustainable and livable urban environments. Discover the Minds Behind InterMobility: Our

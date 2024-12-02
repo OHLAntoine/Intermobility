@@ -9,7 +9,11 @@
         />
       </router-link>
     </div>
-    <button class="cursor-pointer lg:hidden block" @click="menuIsOpen = !menuIsOpen">
+    <button
+      :class="{ hidden: menuIsOpen, block: !menuIsOpen }"
+      class="cursor-pointer lg:hidden"
+      @click="menuIsOpen = !menuIsOpen"
+    >
       <svg
         class="fill-current text-white my-3"
         xmlns="http://www.w3.org/2000/svg"
@@ -22,10 +26,33 @@
       </svg>
     </button>
     <div
-      class="lg:flex lg:items-center lg:w-auto w-full"
+      class="lg:flex lg:items-center lg:w-auto w-full absolute top-0 left-0 bg-[--blue-] lg:static min-h-screen lg:min-h-fit pb-4 lg:pb-0 lg:px-0"
       :class="{ hidden: !menuIsOpen, block: menuIsOpen }"
     >
-      <ul class="text-xl text-center items-center pt-4 lg:text-lg lg:flex lg:pt-0">
+      <div
+        :class="{ hidden: !menuIsOpen, block: menuIsOpen }"
+        class="flex justify-between items-start"
+      >
+        <img
+          src="@/assets/icons/intermobilityIcon.png"
+          alt="Intermobility Logo"
+          class="h-60 w-60"
+        />
+        <button class="cursor-pointer pe-6 pt-2" @click="menuIsOpen = !menuIsOpen">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            class="bi bi-x-lg fill-current text-white my-3 stroke-white stroke-1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+            />
+          </svg>
+        </button>
+      </div>
+      <ul class="text-xl text-center items-center pt-4 lg:text-lg lg:flex lg:pt-0 ps-14 lg:ps-0">
         <li class="py-2 lg:py-0 px-0 lg:px-2 rounded hover:text-black text-white">
           <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
             Home
@@ -235,6 +262,12 @@ const dropdownAboutOpen = ref(false)
 const dropdownEngagementOpen = ref(false)
 const dropdownActionOpen = ref(false)
 const dropdownMediaOpen = ref(false)
+
+window.addEventListener('resize', () => {
+  if (menuIsOpen.value == true) {
+    menuIsOpen.value = false
+  }
+})
 
 import { useMobilityStore } from '@/stores'
 const store = useMobilityStore()
