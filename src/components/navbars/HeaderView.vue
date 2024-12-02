@@ -26,7 +26,7 @@
       </svg>
     </button>
     <div
-      class="lg:flex lg:items-center lg:w-auto w-full absolute top-0 left-0 bg-[--blue-] lg:static min-h-screen lg:min-h-fit pb-4 lg:pb-0 lg:px-0"
+      class="lg:flex lg:items-center lg:w-auto w-full z-50 absolute top-0 left-0 bg-[--blue-] lg:static min-h-screen lg:min-h-fit pb-4 lg:pb-0 lg:px-0"
       :class="{ hidden: !menuIsOpen, block: menuIsOpen }"
     >
       <div

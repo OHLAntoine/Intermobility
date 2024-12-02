@@ -1,4 +1,11 @@
 <template>
+  <download-banner
+    class="bg-red-500 fixed bottom-0 w-full z-20 flex items-center justify-center stroke-black stroke-1"
+    :hrefDownload="store.reportDownload.url"
+    :downloadName="store.reportDownload.name"
+  >
+    Download our new report here
+  </download-banner>
   <section class="backgroundHomeImage h-[92vh] bg-local sm:bg-fixed relative">
     <img
       src="@/assets/images/homeBanner.png"
@@ -101,6 +108,7 @@
 </template>
 
 <script setup>
+import DownloadBanner from '@/components/downloads/DownloadBanner.vue'
 import LinkButton from '@/components/buttons/LinkButton.vue'
 import RouterLinkButton from '@/components/buttons/RouterLinkButton.vue'
 import SimpleSection from '@/components/sections/SimpleSection.vue'

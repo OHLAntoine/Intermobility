@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[--blue-] px-6 lg:px-8 lg:py-3 py-2">
-    <nav class="flex items-center justify-between text-white border-t border-white pt-2">
+    <nav class="flex items-center justify-between text-white border-t border-white py-4">
       <div class="flex items-center">
         <router-link :to="{ name: 'home' }">
           <img

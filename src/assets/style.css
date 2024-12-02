@@ -20,7 +20,8 @@ body {
 
 :root {
   --blue-: rgba(0, 74, 173, 1);
-  --dark_blue-: rgb(0, 60, 138);
+  --dark_blue-: rgba(0, 60, 138, 1);
+  --purple-: rgba(142, 31, 133, 1);
 }
 
 /* Buttons */

@@ -2,6 +2,10 @@ import { defineStore } from 'pinia'
 
 export const useMobilityStore = defineStore('mobility', {
   state: () => ({
+    reportDownload: {
+      name: 'Intermobility White Paper 2024 Acting today for more inclusion, diversity and equity in mobility and transportation.pdf',
+      url: '../../src/assets/downloads/Intermobility-White-Paper-2024-Acting-today-for-more-inclusion,diversity-and-equity-in-mobility-and-transportation.pdf',
+    },
     slidesCarousel: [
       {
         name: 'Events',
