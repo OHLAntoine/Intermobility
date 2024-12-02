@@ -38,6 +38,50 @@ export const useMobilityStore = defineStore('mobility', {
         url: 'https://open.spotify.com/show/6peyf592JmgoZxXWRKwOkM?si=24c51dc91dd447b7&nd=1&dlsi=becee6470a6c4b6f',
       },
     ],
+    team: [
+      {
+        image: '../../src/assets/images/team/kenneth1.jpg',
+        name: 'Kenneth Jensen',
+        title: 'Chief Operating Officer, KINTO Mobility',
+        description:
+          "When he's not working, you might find him exploring the world as a solo eco-friendly backpacker. However, within the professional realm, Kenneth is widely regarded as a senior leader with a remarkable track record in precise planning, flawless execution, and valuable feedback derived from his military background. Kenneth's expertise lies in daily operations, the mechanics of keeping things running smoothly, and the strategies needed to stay ahead in an ever-evolving landscape. His ability to set high standards, even under physical and psychological pressure, is a testament to his commitment.",
+      },
+      {
+        image: '../../src/assets/images/team/lukas1.jpg',
+        name: 'Lukas Neckermann',
+        title: 'Chief Executive Officer, Neckermann Strategic Advisor',
+        description:
+          'Lukas Neckermann, Chief Executive Officer at Neckermann Strategic Advisor, has been at the forefront of the #mobilityrevolution for over a decade. He is a distinguished strategist, advisor, researcher, and sought-after keynote speaker specializing in Smart Cities and Smart Mobility. Lukas introduced pivotal industries to "The Mobility Revolution" with his groundbreaking book in 2014. Subsequently, he authored three more influential works: "Corporate Mobility Breakthrough 2020," "Smart Cities, Smart Mobility," and "Being Driven." He is co-initiator of PAVE Europe and Intermobility. Lukas is the mobility guide in Intermobility.',
+      },
+      {
+        image: '../../src/assets/images/team/ramu1.jpg',
+        name: 'Ramu Nair',
+        title: 'Head of Sales, Invers GmbH',
+        description:
+          'Ramu Nair, Head of Sales at INVERS GmbH, is an accomplished sales leader and a prominent figure in the business development field. He plays a pivotal role at INVERS, the global market leader in shared mobility technology, with a compelling mission: to assist entrepreneurs and organizations in launching and scaling profitable and sustainable mobility services using innovative and dependable software and hardware solutions. Ramu is also responsible for the management and expansion of strategic partnerships with key stakeholders in the ecosystem. His passion lies in the future of mobility and its transformative potential to reshape how we live, work, and travel.',
+      },
+      {
+        image: '../../src/assets/images/team/fh2.jpg',
+        name: 'François Hoehlinger',
+        title: 'Deputy CEO, Troopy',
+        description:
+          'François brings a wealth of experience and a deep-rooted network within the mobility and transportation industry, providing him with a keen understanding of market trends, critical challenges, and effective strategies. He also brings a key emphasis on diversity and inclusion, for which he published a report in 2024, presented to the CEO of DG MOVE (European Commission). François is a valued member of the European Commission Ambassador Program for Diversity and has received several awards. He launched a mobility & transportation dedicated think-tank in France called "Cercle CiME" with Erwann Le Page.',
+      },
+      {
+        image: '../../src/assets/images/team/ScottShepard.png',
+        name: 'Scott Shepard',
+        title: 'Founder, The #CitiesFirstAdvisors Podcast',
+        description:
+          'Scott Shepard is an award-winning urban planner, author, educator, speaker & thought leader, Scott Shepard has his finger on the pulse of everything related to #CitiesFirst, an interdisciplinary term he coined. At the intersection of AI, urbanism, active transportation, shared mobility & decarbonization, Scott delivers real value in the mobility & climate tech ecosystems. Scott is the Founder & CEO of the #CitiesFirst Advisors + Podcast, Co-Author of Technologies for Smart Cities, Board at Green Mobility Magazine & Intermobility, Founding Member & Advisor at Urban AI & Columnist at METRO Magazine".',
+      },
+      {
+        image: '../../src/assets/images/team/dagmara.jpg',
+        name: 'Dagmara Wrzesinska',
+        title: 'MaaS & Urban Mobility expert, Trafi',
+        description:
+          'Dagmara is a transportation engineer with a robust background in industry advocacy, technical expertise, and stakeholder relationship management. Extensive experience at key industry players such as Trafi, POLIS, TIER, and Vias has equipped her with a deep understanding of innovative mobility solutions and regulatory landscapes. Dagmara specializes in creating symbiotic public-private partnerships that allow forward-thinking mobility to flourish. As MaaS & Urban Mobility Specialist at Trafi, she leads outreach and engagement efforts to share Trafi’s expertise with the market. She supports cities as they develop policies to tackle urban mobility challenges by analyzing urban mobility trends and market dynamics.',
+      },
+    ],
   }),
   getters: {},
   actions: {
@@ -71,6 +115,13 @@ export const useMobilityStore = defineStore('mobility', {
     },
     stopSlideInterval() {
       clearInterval(this.slideInterval)
+    },
+    numberIsPair(index) {
+      if (index % 2 == 0) {
+        return true
+      } else {
+        return false
+      }
     },
   },
 })

@@ -24,6 +24,54 @@ body {
   --purple-: rgba(142, 31, 133, 1);
 }
 
+/* Background color */
+
+.bgBlue {
+  background-color: var(--blue-);
+  color: white;
+}
+.bgWhite {
+  background-color: white;
+  color: black;
+}
+
+/* titles */
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 /* Buttons */
 
 .blue_button {
