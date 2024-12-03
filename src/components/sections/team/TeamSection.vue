@@ -9,7 +9,7 @@
     <img
       :src="personImage"
       :alt="`${personName} picture`"
-      class="object-cover border-2 border-black h-60 w-60"
+      class="object-cover h-60 w-60 rounded-full"
     />
     <div class="flex flex-col lg:gap-2">
       <h3 class="text-center md:text-left">

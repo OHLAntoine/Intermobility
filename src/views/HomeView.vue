@@ -1,6 +1,6 @@
 <template>
   <download-banner
-    class="bg-red-500 fixed bottom-0 w-full z-20 flex items-center justify-center stroke-black stroke-1"
+    class="bg-pink-300 fixed bottom-0 w-full z-20 flex items-center justify-center stroke-black stroke-1"
     :hrefDownload="store.reportDownload.url"
     :downloadName="store.reportDownload.name"
   >
@@ -53,27 +53,78 @@
         ideation to refining processes.
       </p>
     </div>
-    <ul class="flex flex-col justify-between w-full md:w-1/2 gap-4 border-2 p-4 rounded">
-      <li class="border-b-2 pb-4">
-        <h3>Support call</h3>
-        <p class="text-xl">
-          Engage in a complimentary consultation call with one of our seasoned experts to address
-          any specific needs or challenges your company may be facing.
-        </p>
+    <ul class="flex flex-col justify-between w-full md:w-1/2 gap-4 p-4">
+      <li class="pb-4">
+        <div class="flex gap-8 items-start justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-arrow-right stroke-black stroke-2 scale-[250%] mt-[4px]"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            />
+          </svg>
+          <div>
+            <h3>Support call</h3>
+            <p class="text-xl">
+              Engage in a complimentary consultation call with one of our seasoned experts to
+              address any specific needs or challenges your company may be facing.
+            </p>
+          </div>
+        </div>
       </li>
-      <li class="border-b-2 pb-4">
-        <h3>Consulting project</h3>
-        <p class="text-xl">
-          Collaborate closely with our experts on a tailored consulting project, whether you require
-          an external perspective or specialized leadership expertise.
-        </p>
+      <li class="pb-4">
+        <div class="flex gap-8 items-start justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-arrow-right stroke-black stroke-2 scale-[250%] mt-[4px]"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            />
+          </svg>
+          <div>
+            <h3>Consulting project</h3>
+            <p class="text-xl">
+              Collaborate closely with our experts on a tailored consulting project, whether you
+              require an external perspective or specialized leadership expertise.
+            </p>
+          </div>
+        </div>
       </li>
       <li>
-        <h3>Dedicated event</h3>
-        <p class="text-xl">
-          Co-create a bespoke event with our network around the future of automotive and mobility
-          with our unique network of 600+ experts and leaders.
-        </p>
+        <div class="flex gap-8 items-start justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-arrow-right stroke-black stroke-2 scale-[250%] mt-[4px]"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+            />
+          </svg>
+          <div>
+            <h3>Dedicated event</h3>
+            <p class="text-xl">
+              Co-create a bespoke event with our network around the future of automotive and
+              mobility with our unique network of 600+ experts and leaders.
+            </p>
+          </div>
+        </div>
       </li>
     </ul>
   </double-section>
