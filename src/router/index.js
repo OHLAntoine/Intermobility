@@ -4,6 +4,7 @@ import DefaultLayout from '@/views/layouts/DefaultLayout.vue'
 import TeamView from '@/views/TeamView.vue'
 import ExpertisesView from '@/views/ExpertisesView.vue'
 import ActionsView from '@/views/ActionsView.vue'
+import ArticlesView from '@/views/ArticlesView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,6 +32,11 @@ const router = createRouter({
           path: '/actions',
           name: 'actions',
           component: ActionsView,
+        },
+        {
+          path: '/articles',
+          name: 'articles',
+          component: ArticlesView,
         },
       ],
     },

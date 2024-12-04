@@ -1,5 +1,7 @@
 <template>
-  <nav class="px-6 lg:px-8 shadow-md flex flex-wrap items-center lg:py-3 py-2 bg-[--blue-]">
+  <nav
+    class="px-6 lg:px-8 shadow-md flex flex-wrap items-center lg:py-3 py-2 bg-[--blue-] overflow-hidden sm:overflow-visible"
+  >
     <div class="flex-1 flex justify-between items-center ps-2">
       <router-link :to="{ name: 'home' }">
         <img
@@ -26,7 +28,7 @@
       </svg>
     </button>
     <div
-      class="lg:flex lg:items-center lg:w-auto w-full z-50 absolute top-0 left-0 bg-[--blue-] lg:static min-h-screen lg:min-h-fit pb-4 lg:pb-0 lg:px-0"
+      class="lg:flex lg:items-center lg:w-auto w-full sm:w-1/2 z-50 absolute top-0 right-0 bg-[--blue-] lg:static min-h-screen lg:min-h-fit pb-4 lg:pb-0 lg:px-0"
       :class="{ hidden: !menuIsOpen, block: menuIsOpen }"
     >
       <div
@@ -46,6 +48,7 @@
             class="bi bi-x-lg fill-current text-white my-3 stroke-white stroke-1"
             viewBox="0 0 16 16"
           >
+            <title>close menu</title>
             <path
               d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
             />
@@ -216,7 +219,7 @@
             <li
               class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
             >
-              <router-link :to="{ name: 'home' }">Articles</router-link>
+              <router-link :to="{ name: 'articles' }">Articles</router-link>
             </li>
             <li class="lg:border lg:border-white"></li>
             <li
