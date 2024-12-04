@@ -38,6 +38,20 @@ export const useMobilityStore = defineStore('mobility', {
         url: 'https://open.spotify.com/show/6peyf592JmgoZxXWRKwOkM?si=24c51dc91dd447b7&nd=1&dlsi=becee6470a6c4b6f',
       },
     ],
+    podcastPlayers: [
+      {
+        url: 'https://open.spotify.com/embed/show/6peyf592JmgoZxXWRKwOkM?utm_source=generator&theme=0',
+        name: 'Mobility Pioneer',
+      },
+      {
+        url: 'https://open.spotify.com/embed/show/73bwBTg8JAP7yxCZ52E6qy?utm_source=generator&theme=0',
+        name: 'Zipidi Doo-Dah',
+      },
+      {
+        url: 'https://open.spotify.com/embed/show/0sazSrcIOtRJCniMv03pJr?utm_source=generator&theme=0',
+        name: 'The #CitiesFirst Podcast',
+      },
+    ],
     team: [
       {
         image: '../../src/assets/images/team/kenneth1.jpg',
@@ -80,6 +94,28 @@ export const useMobilityStore = defineStore('mobility', {
         title: 'MaaS & Urban Mobility expert, Trafi',
         description:
           'Dagmara is a transportation engineer with a robust background in industry advocacy, technical expertise, and stakeholder relationship management. Extensive experience at key industry players such as Trafi, POLIS, TIER, and Vias has equipped her with a deep understanding of innovative mobility solutions and regulatory landscapes. Dagmara specializes in creating symbiotic public-private partnerships that allow forward-thinking mobility to flourish. As MaaS & Urban Mobility Specialist at Trafi, she leads outreach and engagement efforts to share Trafi’s expertise with the market. She supports cities as they develop policies to tackle urban mobility challenges by analyzing urban mobility trends and market dynamics.',
+      },
+    ],
+    supports: [
+      {
+        image: '../../src/assets/images/experts/supports/ambassadors.jpg',
+        name: 'Ambassadors for Diversity In Transport',
+        url: 'https://transport.ec.europa.eu/transport-themes/social-issues-equality-and-attractiveness-transport-sector/equality/diversity-ambassadors-transport_en',
+      },
+      {
+        image: '../../src/assets/images/experts/supports/femmesenmouvement.png',
+        name: ' Femmes en Mouvement',
+        url: 'https://www.femvt.fr/',
+      },
+      {
+        image: '../../src/assets/images/experts/supports/polis.png',
+        name: 'Polis Network for Cities & Regions',
+        url: 'https://www.polisnetwork.eu/',
+      },
+      {
+        image: '../../src/assets/images/experts/supports/mobilians.png',
+        name: 'Mobilians',
+        url: 'https://www.mobilians.fr/le-point-sur/artisans-du-cnpa/',
       },
     ],
   }),

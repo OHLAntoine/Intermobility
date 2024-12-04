@@ -61,12 +61,7 @@
         <li class="py-2 lg:py-0 px-0 lg:px-2 rounded text-white lg:relative">
           <div
             class="font-bold text-base flex items-center cursor-pointer hover:text-black"
-            @click="
-              (dropdownAboutOpen = !dropdownAboutOpen),
-                (dropdownEngagementOpen = false),
-                (dropdownActionOpen = false),
-                (dropdownMediaOpen = false)
-            "
+            @click="openDropdownAbout()"
           >
             About us
             <svg
@@ -91,19 +86,14 @@
             <li
               class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
             >
-              <router-link :to="{ name: 'home' }">Expertises</router-link>
+              <router-link :to="{ name: 'expertises' }">Expertises</router-link>
             </li>
           </ul>
         </li>
         <li class="py-2 lg:py-0 px-0 lg:px-2 rounded text-white lg:relative">
           <div
             class="font-bold text-base flex items-center cursor-pointer hover:text-black"
-            @click="
-              (dropdownEngagementOpen = !dropdownEngagementOpen),
-                (dropdownAboutOpen = false),
-                (dropdownActionOpen = false),
-                (dropdownMediaOpen = false)
-            "
+            @click="openDropdownEngagement()"
           >
             Our engagements
             <svg
@@ -157,12 +147,7 @@
         <li class="py-2 lg:py-0 px-0 lg:px-2 rounded text-white lg:relative">
           <div
             class="font-bold text-base flex items-center cursor-pointer hover:text-black"
-            @click="
-              (dropdownActionOpen = !dropdownActionOpen),
-                (dropdownAboutOpen = false),
-                (dropdownEngagementOpen = false),
-                (dropdownMediaOpen = false)
-            "
+            @click="openDropdownAction()"
           >
             Our actions
             <svg
@@ -202,12 +187,7 @@
         <li class="py-2 lg:py-0 px-0 lg:px-2 rounded text-white lg:relative">
           <div
             class="font-bold text-base flex items-center cursor-pointer hover:text-black"
-            @click="
-              (dropdownMediaOpen = !dropdownMediaOpen),
-                (dropdownAboutOpen = false),
-                (dropdownEngagementOpen = false),
-                (dropdownActionOpen = false)
-            "
+            @click="openDropdownMedia()"
           >
             Our medias
             <svg
@@ -262,6 +242,44 @@ const dropdownAboutOpen = ref(false)
 const dropdownEngagementOpen = ref(false)
 const dropdownActionOpen = ref(false)
 const dropdownMediaOpen = ref(false)
+
+const openDropdownAbout = () => {
+  dropdownAboutOpen.value = !dropdownAboutOpen.value
+  dropdownEngagementOpen.value = false
+  dropdownActionOpen.value = false
+  dropdownMediaOpen.value = false
+}
+
+const openDropdownEngagement = () => {
+  dropdownEngagementOpen.value = !dropdownEngagementOpen.value
+  dropdownAboutOpen.value = false
+  dropdownActionOpen.value = false
+  dropdownMediaOpen.value = false
+}
+
+const openDropdownAction = () => {
+  dropdownActionOpen.value = !dropdownActionOpen.value
+  dropdownAboutOpen.value = false
+  dropdownEngagementOpen.value = false
+  dropdownMediaOpen.value = false
+}
+
+const openDropdownMedia = () => {
+  dropdownMediaOpen.value = !dropdownMediaOpen.value
+  dropdownAboutOpen.value = false
+  dropdownEngagementOpen.value = false
+  dropdownActionOpen.value = false
+}
+
+import router from '@/router'
+
+router.afterEach(() => {
+  menuIsOpen.value = false
+  dropdownMediaOpen.value = false
+  dropdownAboutOpen.value = false
+  dropdownEngagementOpen.value = false
+  dropdownActionOpen.value = false
+})
 
 window.addEventListener('resize', () => {
   if (window.innerWidth > 1023 && menuIsOpen.value == true) {
