@@ -166,13 +166,18 @@
             <li
               class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
             >
-              <router-link :to="{ name: 'home' }" class="text-nowrap">Support call</router-link>
+              <router-link :to="{ name: 'actions' }" v-scroll-to="'#callAction'" class="text-nowrap"
+                >Support call</router-link
+              >
             </li>
             <li class="lg:border lg:border-white"></li>
             <li
               class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
             >
-              <router-link :to="{ name: 'home' }" class="text-nowrap"
+              <router-link
+                :to="{ name: 'actions' }"
+                v-scroll-to="'#projectAction'"
+                class="text-nowrap"
                 >Consulting project</router-link
               >
             </li>
@@ -180,7 +185,12 @@
             <li
               class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
             >
-              <router-link :to="{ name: 'home' }" class="text-nowrap">Dedicated event</router-link>
+              <router-link
+                :to="{ name: 'actions' }"
+                v-scroll-to="'#eventAction'"
+                class="text-nowrap"
+                >Dedicated event</router-link
+              >
             </li>
           </ul>
         </li>
@@ -200,7 +210,7 @@
             </svg>
           </div>
           <ul
-            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base bg-[--blue-]"
+            class="flex flex-col pt-4 lg:pt-0 lg:absolute top-11 lg:right-0 rounded-b font-bold text-base bg-[--blue-] media_drowdown"
             :class="{ hidden: !dropdownMediaOpen, block: dropdownMediaOpen }"
           >
             <li
@@ -299,5 +309,9 @@ const store = useMobilityStore()
 
 .arrow_dropdown {
   height: 1rem;
+}
+
+.media_drowdown {
+  width: -webkit-fill-available;
 }
 </style>
