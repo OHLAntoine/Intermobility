@@ -103,8 +103,22 @@ h6 {
   color: var(--dark_blue-);
 }
 
-/* sections */
+/* Sections */
 
 .blue_section {
   background-color: var(--blue-);
+}
+
+/* Article */
+.firstTitleArticle {
+  padding-bottom: 0.5rem;
+}
+.middleTitleArticle {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.paragrapheArticle {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: justify;
 }

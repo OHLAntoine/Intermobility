@@ -123,25 +123,35 @@ export const useMobilityStore = defineStore('mobility', {
         title: 'Diversity, inclusion and equality',
         resume:
           "In Europe, both metropolitan and intermediate-sized cities are grappling with similar challenges in transitioning towards more accessible mobility solutions. The concept of a 'just transition' in mobility is pivotal. It's about evolving our approaches to ensure equitable access to transportation, reflecting our commitment to creating a society where mobility creates opportunities for all. Our goal is to bridge these gaps and empower women and groups of people who are often underserved by traditional transportation systems,with reliable, safe, and accessible transportation options, thereby fostering a more inclusive and sustainable mobility ecosystem in Europe.",
-        pathName: 'home',
+        pathName: 'gender equality',
+        image: '../../src/assets/images/articles/egalite_des_genres.jpg',
       },
       {
         title: 'Mobility HUB',
         resume:
           "In an era where sustainable and efficient urban transportation is paramount, cities across Europe are embracing a transformative movement, with France leading the way. Mobility hubs, the epicenters of this change, are redefining urban navigation in major European cities. It's a physical space where different modes of transportation converge, offering a seamless transition from one mode to another. These hubs typically include options like bicycles, scooters, cars , and public transit like buses and trains. The idea is to create a centralized point in urban areas where people can easily switch between different forms of transport, depending on their needs. They are the cornerstone in the battle against noise, visual pollution, and air pollution, making them indispensable in our quest for sustainable urban living.",
-        pathName: 'home',
+        pathName: 'mobility hub',
+        image: '../../src/assets/images/articles/Hubs_de_mobilité.jpg',
       },
       {
         title: 'USP Network',
         resume:
           "At InterMobility, we are dedicated to reshaping the landscape of European mobility. Our mission is to foster a network that champions innovation, collaboration, and sustainable solutions in the automotive, transportation, and energy sectors. Our focus on collaborative innovation and expert networking sets us apart, ensuring that we stay ahead in the rapidly evolving world of European mobility. We believe in creating a future where mobility is not only efficient and innovative but also inclusive and environmentally friendly. Whether it's refining business processes or ideating new mobility solutions, InterMobility is equipped to guide and support businesses at every stage of their journey towards sustainable mobility.",
-        pathName: 'home',
+        pathName: 'usp network',
+        image: '../../src/assets/images/articles/USP_du_reseau.jpeg',
       },
       {
         title: 'Youth, decarbonization and technologies',
         resume:
           "At InterMobility, we are more than visionaries in the European mobility landscape: we are active architects of its future. Our approach combines collaboration and innovation to redefine mobility. InterMobility stands as a pillar of collaboration and expert networking in the European mobility sector. Creating Synergy between Industry and Academia: We leverage our extensive network to forge dynamic partnerships with educational institutions. Be a part of this transformative journey and contribute to a greener future for European mobility. We invite mobility enthusiasts, industry professionals, and young innovators to discover InterMobility's unique offerings.",
-        pathName: 'home',
+        pathName: 'youth decarnization tech',
+        image: '../../src/assets/images/articles/decarbonation.jpg',
+      },
+    ],
+    books: [
+      {
+        title: 'Reconstruire le féminisme',
+        image: '../../src/assets/images/articles/Reconstruire-le-feminisme.jpg',
       },
     ],
   }),

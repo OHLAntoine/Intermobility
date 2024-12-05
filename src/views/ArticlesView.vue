@@ -21,17 +21,32 @@
         <li class="text-xl">
           "Paris Is Great, But Here's Where the Green Mobility Revolution Is Happening"
           <span class="italic font-light">by Scott Shepard for Planitizen.</span
-          ><a href="" target="_blank" class="underline ms-2 link_blue text-nowrap">View more >>></a>
+          ><a
+            href="https://www.planetizen.com/features/126996-paris-great-heres-where-green-mobility-revolution-happening"
+            target="_blank"
+            class="underline ms-2 link_blue text-nowrap"
+            >View more >>></a
+          >
         </li>
         <li class="text-xl">
           "Did the Pandemic Spur Radical Urban Change ?"
           <span class="italic font-light">by Diana Ionescu for Planitizen.</span
-          ><a href="" target="_blank" class="underline ms-2 link_blue text-nowrap">View more >>></a>
+          ><a
+            href="https://www.planetizen.com/news/2024/02/127470-did-pandemic-spur-radical-urban-change"
+            target="_blank"
+            class="underline ms-2 link_blue text-nowrap"
+            >View more >>></a
+          >
         </li>
         <li class="text-xl">
           "Being “Smart” Isn’t Enough, Cities Need to be Human-Centric Too"
           <span class="italic font-light">by Scott Shepard for Ibex Publishing.</span
-          ><a href="" target="_blank" class="underline ms-2 link_blue text-nowrap">View more >>></a>
+          ><a
+            href="https://ibexpub.media/being-smart-isnt-enough-cities-need-to-be-human-centric-too/"
+            target="_blank"
+            class="underline ms-2 link_blue text-nowrap"
+            >View more >>></a
+          >
         </li>
       </ul>
     </section>
