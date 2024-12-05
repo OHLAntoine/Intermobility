@@ -66,7 +66,7 @@
     <div class="grid lg:grid-cols-3 gap-6 lg:gap-12">
       <podcast-player
         v-for="(podcastPlayer, index) in store.podcastPlayers"
-        :key="index"
+        :key="`podacast-${index}`"
         :podcastSrc="podcastPlayer.url"
         :podcastName="podcastPlayer.name"
       ></podcast-player>

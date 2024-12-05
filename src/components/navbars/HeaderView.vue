@@ -225,7 +225,7 @@
             <li
               class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
             >
-              <router-link :to="{ name: 'home' }" class="text-nowrap">Podcasts</router-link>
+              <router-link :to="{ name: 'podcasts' }" class="text-nowrap">Podcasts</router-link>
             </li>
             <li class="lg:border lg:border-white"></li>
             <li

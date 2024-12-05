@@ -9,6 +9,7 @@ import GenderEquality from '@/views/articles/GenderEquality.vue'
 import MobilityHUB from '@/views/articles/MobilityHUB.vue'
 import USPNetwork from '@/views/articles/USPNetwork.vue'
 import YouthDecarbonizationTech from '@/views/articles/YouthDecarbonizationTech.vue'
+import PodcastsView from '@/views/PodcastsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -61,6 +62,11 @@ const router = createRouter({
           path: '/YouthDecarbonizationTech',
           name: 'youth decarnization tech',
           component: YouthDecarbonizationTech,
+        },
+        {
+          path: '/Podcasts',
+          name: 'podcasts',
+          component: PodcastsView,
         },
       ],
     },

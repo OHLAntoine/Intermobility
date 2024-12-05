@@ -42,14 +42,20 @@ export const useMobilityStore = defineStore('mobility', {
       {
         url: 'https://open.spotify.com/embed/show/6peyf592JmgoZxXWRKwOkM?utm_source=generator&theme=0',
         name: 'Mobility Pioneer',
+        description:
+          "Mobility Pioneer est un podcast dédiés aux plus belles histoires de la mobilité : interviews, reportage et documentaires pour que les experts comme les curieux puissent découvrir l'envers du décor de la mobilité. Success stories, tendances et entreprises innovantes sont au menu de ce podcast, présenté par François, un des co-fondateurs d'Intermobility et entrepreneur dans le transport et la mobilité depuis plusieurs années. Mobility Pioneer is a podcast dedicated to key stories of mobility: interviews, reports and documentaries led by François, Intermobility co-founder.",
       },
       {
         url: 'https://open.spotify.com/embed/show/73bwBTg8JAP7yxCZ52E6qy?utm_source=generator&theme=0',
         name: 'Zipidi Doo-Dah',
+        description:
+          'Zipidi Doo-Dahs discuss issues and opportunities in new mobility. We guide decision-makers to better understand and harness the potential of micromobility while developing robust policies and frameworks that promote sustainability, safety, accessibility, and seamless integration into existing transport strategies. Zipidi is a specialist micromobility consultancy with a comprehensive understanding of the entire micromobility landscape, including insurance.',
       },
       {
         url: 'https://open.spotify.com/embed/show/0sazSrcIOtRJCniMv03pJr?utm_source=generator&theme=0',
         name: 'The #CitiesFirst Podcast',
+        description:
+          'New Podcast Series hosted by Scott Shepard, and focused on the intersection of AI, Urbanism, Active Transportation, Shared Mobility & Decarbonization',
       },
     ],
     team: [
