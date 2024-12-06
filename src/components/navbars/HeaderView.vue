@@ -236,7 +236,7 @@
           </ul>
         </li>
         <li class="py-2 lg:py-0 px-0 lg:px-2 rounded hover:text-black text-white">
-          <router-link :to="{ name: 'home' }" class="font-bold text-base flex items-center">
+          <router-link :to="{ name: 'contact' }" class="font-bold text-base flex items-center">
             Contact us
           </router-link>
         </li>

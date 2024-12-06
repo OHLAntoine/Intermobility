@@ -140,7 +140,9 @@
         sustainable and livable urban environments. Discover the Minds Behind InterMobility: Our
         Founding Team and Experts.
       </p>
-      <router-link-button linkPath="/" class="white_button">Discover our team</router-link-button>
+      <router-link-button pathName="team" class="white_button"
+        >Discover our team</router-link-button
+      >
     </div>
   </section>
   <double-section>

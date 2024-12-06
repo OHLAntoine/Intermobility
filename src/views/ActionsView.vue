@@ -5,7 +5,7 @@
       Get 15 minutes of free expert advice on a topic of your choice. Unlock insights and solutions
       for your business.
     </p>
-    <router-link-button pathName="home" class="blue_button"
+    <router-link-button pathName="contact" class="blue_button"
       ><svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -27,7 +27,7 @@
       InterMobility provides you with expert guidance and support to ensure your projects are
       delivered on time and on target. Let's discuss how we can boost your project's success.
     </p>
-    <router-link-button pathName="home" class="white_button"
+    <router-link-button pathName="contact" class="white_button"
       ><svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -49,7 +49,7 @@
       InterMobility empowers your company or association's growth and amplifies your message.
       Harness our extensive network to co-create impactful events with us.
     </p>
-    <router-link-button pathName="home" class="blue_button"
+    <router-link-button pathName="contact" class="blue_button"
       ><svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
