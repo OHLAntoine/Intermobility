@@ -10,6 +10,7 @@ import MobilityHUB from '@/views/articles/MobilityHUB.vue'
 import USPNetwork from '@/views/articles/USPNetwork.vue'
 import YouthDecarbonizationTech from '@/views/articles/YouthDecarbonizationTech.vue'
 import PodcastsView from '@/views/PodcastsView.vue'
+import BooksView from '@/views/BooksView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -67,6 +68,11 @@ const router = createRouter({
           path: '/Podcasts',
           name: 'podcasts',
           component: PodcastsView,
+        },
+        {
+          path: '/Books',
+          name: 'books',
+          component: BooksView,
         },
       ],
     },
