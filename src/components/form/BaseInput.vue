@@ -1,12 +1,13 @@
 <template>
   <div class="flex flex-col items-start gap-1 w-full">
-    <label :for="inputName" class="text-lg">{{ labelName }}</label>
+    <label :for="labelName" class="text-lg">{{ labelValue }}</label>
     <input
-      :type="inputType"
+      :type="labelType"
       class="rounded p-2 border border-[--blue-] focus:border-[--dark_blue-] w-full"
-      :name="inputName"
-      :id="inputName"
-      :placeholder="placeholderName"
+      :name="labelName"
+      :id="labelName"
+      :placeholder="placeholderValue"
+      v-model="modelValue"
       :required="required"
     />
   </div>
@@ -14,12 +15,14 @@
 
 <script setup>
 defineProps({
-  inputName: String,
+  labelType: String,
   labelName: String,
-  inputType: String,
-  placeholderName: String,
+  labelValue: String,
+  placeholderValue: String,
   required: String,
 })
+
+const modelValue = defineModel()
 </script>
 
 <style scoped></style>
