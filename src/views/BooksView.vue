@@ -6,7 +6,7 @@
     </p>
   </simple-section>
   <double-section class="bg-[--blue-] text-white items-center">
-    <img :src="store.books[0].image" :alt="`${store.books[0].title} cover`" class="h-80" />
+    <img :src="store.books[0].image" :alt="`${store.books[0].title} cover picture`" class="h-80" />
     <p class="text-xl text-center md:ms-12">
       Reconstruire le féminisme retrace avec précision et consistance les courants de pensées qui
       ont mené à la révolution à laquelle nous assistons, à l’émergence de nouvelles générations

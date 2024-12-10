@@ -55,7 +55,7 @@
     >
       <img
         src="../assets/images/experts/cercleK2.jpg"
-        alt="The 5 building Block"
+        alt="Cercle CiME publication around sustainable mobility at Cercle K2"
         class="w-full md:w-3/4 h-auto"
       />
       Cercle CiME publication around sustainable mobility at Cercle K2

@@ -26,6 +26,7 @@
     <link-button
       linkPath="https://www.linkedin.com/company/intermobility-eu/posts/"
       class="blue_button"
+      title="Join us on LinkedIn !"
       >Join us</link-button
     >
   </simple-section>
@@ -140,7 +141,10 @@
         sustainable and livable urban environments. Discover the Minds Behind InterMobility: Our
         Founding Team and Experts.
       </p>
-      <router-link-button pathName="team" class="white_button"
+      <router-link-button
+        pathName="team"
+        class="white_button"
+        title="Meet our formidable experts and the cofounding team"
         >Discover our team</router-link-button
       >
     </div>

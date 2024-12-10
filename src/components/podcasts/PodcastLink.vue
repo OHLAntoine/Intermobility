@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center justify-around gap-4">
     <div class="rounded-full h-40 overflow-hidden">
-      <img :src="podcastImage" :alt="`${podcastName} logo`" class="h-40 scale-105" />
+      <img :src="podcastImage" :alt="`${podcastName} podcast logo`" class="h-40 scale-105" />
     </div>
     <h4 class="text-nowrap">{{ podcastName }}</h4>
     <link-button :linkPath="podcastLinkPath" class="blue_button">Go to Spotify</link-button>
