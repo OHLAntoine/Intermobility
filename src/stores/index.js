@@ -160,6 +160,7 @@ export const useMobilityStore = defineStore('mobility', {
         image: '../../src/assets/images/articles/Reconstruire-le-feminisme.jpg',
       },
     ],
+    modalIsOpen: false,
   }),
   getters: {},
   actions: {
@@ -200,6 +201,12 @@ export const useMobilityStore = defineStore('mobility', {
       } else {
         return false
       }
+    },
+    openModal() {
+      this.modalIsOpen = true
+    },
+    closeModal() {
+      this.modalIsOpen = false
     },
   },
 })
