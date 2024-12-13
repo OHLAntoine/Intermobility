@@ -19,6 +19,13 @@
       plus d’égalité et de reconnaissance du travail réalisé par des minorités. Un plaidoyer réalisé
       par un homme pour les femmes, précurseur d’un mouvement se voulant plus inclusif et plus
       fédérateur.
+      <br />
+      <a
+        href="https://www.amazon.fr/Reconstruire-f%C3%A9minisme-d%C3%A9cole-conseils-dadministration/dp/233645162X/ref=cm_cr_arp_d_product_top?ie=UTF8"
+        target="_blank"
+        class="link_white underline ps-2 text-nowrap"
+        >Available here >>></a
+      >
     </p>
   </double-section>
 </template>
