@@ -38,7 +38,7 @@
         v-for="(slide, index) in slides"
         :key="`slide-${index}`"
       >
-        <p class="font-bold" v-show="currentSlide === index">{{ slide.name }}</p>
+        <p class="font-bold text-center" v-show="currentSlide === index">{{ slide.name }}</p>
       </div>
       <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
         <button

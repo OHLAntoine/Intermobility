@@ -80,6 +80,12 @@ import ArticleView from '@/components/sections/articles/ArticleView.vue'
 
 import { useMobilityStore } from '@/stores'
 const store = useMobilityStore()
+
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  window.scrollTo(0, 0)
+})
 </script>
 
 <style scoped></style>
