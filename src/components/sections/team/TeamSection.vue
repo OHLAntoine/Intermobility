@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col md:flex-row justify-center items-center gap-6 p-16"
+    class="flex flex-col md:flex-row justify-center items-center gap-6 py-16 px-8 sm:px-16"
     :class="{
       bgWhite: !store.numberIsPair(personIndex),
       bgBlue: store.numberIsPair(personIndex),

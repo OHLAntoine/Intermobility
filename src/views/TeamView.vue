@@ -1,7 +1,7 @@
 <template>
-  <simple-section>
+  <section class="flex flex-col gap-6 py-16 px-8 sm:px-16 items-center text-center">
     <h2>Meet our founding team, composed of mobility experts & leaders</h2>
-    <p class="text-lg">
+    <p class="text-lg text-justify sm:text-center">
       Welcome to InterMobility, where innovation and expertise converge to transform mobility. Our
       founding team, a group of seasoned professionals, is dedicated to creating sustainable,
       livable cities, emphasizing collaboration across Europe. Meet the leaders of InterMobility,
@@ -10,7 +10,7 @@
       more sustainable future. Join us in our quest for a better tomorrow, and discover the
       brilliant minds making a difference at InterMobility.
     </p>
-  </simple-section>
+  </section>
   <section class="grid grid-flow-row auto-rows-max">
     <team-section
       v-for="(person, index) in store.team"
@@ -25,7 +25,6 @@
 </template>
 
 <script setup>
-import SimpleSection from '@/components/sections/SimpleSection.vue'
 import TeamSection from '@/components/sections/team/TeamSection.vue'
 
 import { useMobilityStore } from '@/stores'

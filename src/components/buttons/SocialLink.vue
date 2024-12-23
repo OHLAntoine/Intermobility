@@ -2,7 +2,7 @@
   <a
     :href="socialLinkPath"
     target="_blank"
-    class="flex items-center justify-center gap-2 h-6 w-6 fill-white hover:fill-black cursor-pointer"
+    class="flex items-center justify-center gap-2 h-8 w-8 fill-white hover:fill-black cursor-pointer"
   >
     <slot></slot>
   </a>
