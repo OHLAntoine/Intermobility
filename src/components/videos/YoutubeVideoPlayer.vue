@@ -1,6 +1,5 @@
 <template>
   <iframe
-    width="450"
     height="315"
     :src="videoSrc"
     :title="videoTitle"

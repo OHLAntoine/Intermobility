@@ -7,6 +7,7 @@
         :key="`video-${index}`"
         :videoSrc="youtubePlayer.url"
         :videoTitle="youtubePlayer.title"
+        class="w-auto sm:w-[450px]"
       ></youtube-video-player>
     </div>
     <p class="text-xl">
