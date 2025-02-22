@@ -48,6 +48,17 @@
             >View more >>></a
           >
         </li>
+        <li class="text-xl">
+          “Edenred: Challenges for mobility in Europe & Latin America”
+          <span class="italic font-light"
+            >Edenred unveils a key study on mobility in Europe & Latin America</span
+          ><a
+            href="https://media.edenred.com/edenred-unveils-white-paper-addressing-key-mobility-challenges-in-europe-and-latin-america/"
+            target="_blank"
+            class="underline ms-2 link_blue text-nowrap"
+            >View more >>></a
+          >
+        </li>
       </ul>
     </section>
   </div>

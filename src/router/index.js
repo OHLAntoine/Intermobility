@@ -5,13 +5,18 @@ import TeamView from '@/views/TeamView.vue'
 import ExpertisesView from '@/views/ExpertisesView.vue'
 import ActionsView from '@/views/ActionsView.vue'
 import ArticlesView from '@/views/ArticlesView.vue'
-import GenderEquality from '@/views/articles/GenderEquality.vue'
-import MobilityHUB from '@/views/articles/MobilityHUB.vue'
-import USPNetwork from '@/views/articles/USPNetwork.vue'
-import YouthDecarbonizationTech from '@/views/articles/YouthDecarbonizationTech.vue'
+import GenderEquality from '@/views/articles/GenderEqualityView.vue'
+import MobilityHUB from '@/views/articles/MobilityHUBView.vue'
+import USPNetwork from '@/views/articles/USPNetworkView.vue'
+import YouthDecarbonizationTech from '@/views/articles/YouthDecarbonizationTechView.vue'
 import PodcastsView from '@/views/PodcastsView.vue'
 import BooksView from '@/views/BooksView.vue'
 import ContactView from '@/views/ContactView.vue'
+import WebinarsView from '@/views/engagements/WebinarsView.vue'
+import ConferencesView from '@/views/engagements/ConferencesView.vue'
+import WhitePapersView from '@/views/engagements/WhitePapersView.vue'
+import CercleCimeView from '@/views/engagements/CercleCimeView.vue'
+import PlugAndPlayView from '@/views/engagements/PlugAndPlayView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -48,6 +53,54 @@ const router = createRouter({
             title: 'Intermobility - Expertises',
             description:
               'Discover our expertises in transportation, mobility, and sustainable practices, driving change for a better future.',
+          },
+        },
+        {
+          path: '/webinars',
+          name: 'webinars',
+          component: WebinarsView,
+          meta: {
+            title: 'Intermobility - Webinars',
+            description:
+              'Discover us during our webinars about mobility, transportation and Smart Cities',
+          },
+        },
+        {
+          path: '/conferences',
+          name: 'conferences',
+          component: ConferencesView,
+          meta: {
+            title: 'Intermobility - Conferences',
+            description:
+              'Discover us during our conferences about mobility, transportation and Smart Cities',
+          },
+        },
+        {
+          path: '/whitePapers',
+          name: 'whitePapers',
+          component: WhitePapersView,
+          meta: {
+            title: 'Intermobility - White Papers',
+            description:
+              'Discover our white papers about mobility, transportation and Smart Cities',
+          },
+        },
+        {
+          path: '/cercleCime',
+          name: 'cercleCime',
+          component: CercleCimeView,
+          meta: {
+            title: 'Intermobility - Cercle CiME',
+            description: 'Discover our public affairs with Cercle CiME',
+          },
+        },
+        {
+          path: '/plugAndPlay',
+          name: 'plugAndPlay',
+          component: PlugAndPlayView,
+          meta: {
+            title: 'Intermobility - Plug & Play',
+            description: 'Discover the innovation inside the Smart Cities with Plug & Play',
           },
         },
         {

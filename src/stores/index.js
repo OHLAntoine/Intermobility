@@ -1,9 +1,11 @@
 import { defineStore } from 'pinia'
 
 import DownloadReport from '@/assets/downloads/Intermobility-White-Paper-2024-Acting-today-for-more-inclusion,diversity-and-equity-in-mobility-and-transportation.pdf'
-import EventImage from '@/assets/images/engagements/event1.jpg'
-import ConferenceImage from '@/assets/images/engagements/conferenceramu1.jpg'
+import ConferenceImage from '@/assets/images/engagements/event1.jpg'
+import WebinarImage from '@/assets/images/engagements/conferenceramu1.jpg'
 import ReportImage from '@/assets/images/engagements/report&whitepapers.png'
+import CimeImage from '@/assets/images/engagements/cercleCime.png'
+import PlugAndPlayImage from '@/assets/images/engagements/PlugAndPlay2.jpg'
 import CitiesFirstLogo from '@/assets/images/podcasts/the_citiesfirst_podcast_logo.jpg'
 import MobilityPioneerLogo from '@/assets/images/podcasts/MobilityPioneer.png'
 import KennethPicture from '@/assets/images/team/kenneth1.jpg'
@@ -30,19 +32,29 @@ export const useMobilityStore = defineStore('mobility', {
     },
     slidesCarousel: [
       {
-        name: 'Events',
-        url: EventImage,
-        alt: 'Engaged participants at an InterMobility event',
+        name: 'Webinars',
+        url: WebinarImage,
+        alt: 'Inspirational speakers at an InterMobility conference',
       },
       {
         name: 'Conferences',
         url: ConferenceImage,
-        alt: 'Inspirational speakers at an InterMobility conference',
+        alt: 'Engaged participants at an InterMobility event',
       },
       {
         name: 'Reports & white papers',
         url: ReportImage,
         alt: "Comprehensive collection of InterMobility's white papers and reports, offering in-depth analyses and expert insights on mobility and transportation trends.",
+      },
+      {
+        name: 'Cercle CiME',
+        url: CimeImage,
+        alt: 'Public Affairs with Cercle CiME',
+      },
+      {
+        name: 'Plug & Play',
+        url: PlugAndPlayImage,
+        alt: 'Innovation inside the Smart Cities with Plug & Play',
       },
     ],
     currentSlide: 0,
@@ -80,11 +92,21 @@ export const useMobilityStore = defineStore('mobility', {
           'New Podcast Series hosted by Scott Shepard, and focused on the intersection of AI, Urbanism, Active Transportation, Shared Mobility & Decarbonization',
       },
     ],
+    youtubePlayers: [
+      {
+        url: 'https://www.youtube.com/embed/dAOC7TpnKnk?si=jn3I9VtV3R8v7igf',
+        title: 'Mobility Talks - Lukas Neckermann',
+      },
+      {
+        url: 'https://www.youtube.com/embed/s3dsULWsC_0?si=yE0aWZSQOfRVIIwL',
+        title: 'Ramu Nair - How INVERS is making keyless car-sharing more secure',
+      },
+    ],
     team: [
       {
         image: KennethPicture,
         name: 'Kenneth Jensen',
-        title: 'Chief Operating Officer, KINTO Mobility',
+        title: 'CEO, Forsvaret',
         description:
           "When he's not working, you might find him exploring the world as a solo eco-friendly backpacker. However, within the professional realm, Kenneth is widely regarded as a senior leader with a remarkable track record in precise planning, flawless execution, and valuable feedback derived from his military background. Kenneth's expertise lies in daily operations, the mechanics of keeping things running smoothly, and the strategies needed to stay ahead in an ever-evolving landscape. His ability to set high standards, even under physical and psychological pressure, is a testament to his commitment.",
       },
@@ -105,7 +127,7 @@ export const useMobilityStore = defineStore('mobility', {
       {
         image: FrancoisPicture,
         name: 'François Hoehlinger',
-        title: 'Deputy CEO, Troopy',
+        title: 'Director, Plug & Play',
         description:
           'François brings a wealth of experience and a deep-rooted network within the mobility and transportation industry, providing him with a keen understanding of market trends, critical challenges, and effective strategies. He also brings a key emphasis on diversity and inclusion, for which he published a report in 2024, presented to the CEO of DG MOVE (European Commission). François is a valued member of the European Commission Ambassador Program for Diversity and has received several awards. He launched a mobility & transportation dedicated think-tank in France called "Cercle CiME" with Erwann Le Page.',
       },
@@ -119,7 +141,7 @@ export const useMobilityStore = defineStore('mobility', {
       {
         image: DagmaraPicture,
         name: 'Dagmara Wrzesinska',
-        title: 'MaaS & Urban Mobility expert, Trafi',
+        title: 'Mobility Expert',
         description:
           'Dagmara is a transportation engineer with a robust background in industry advocacy, technical expertise, and stakeholder relationship management. Extensive experience at key industry players such as Trafi, POLIS, TIER, and Vias has equipped her with a deep understanding of innovative mobility solutions and regulatory landscapes. Dagmara specializes in creating symbiotic public-private partnerships that allow forward-thinking mobility to flourish. As MaaS & Urban Mobility Specialist at Trafi, she leads outreach and engagement efforts to share Trafi’s expertise with the market. She supports cities as they develop policies to tackle urban mobility challenges by analyzing urban mobility trends and market dynamics.',
       },

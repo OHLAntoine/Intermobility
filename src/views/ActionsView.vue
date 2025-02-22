@@ -24,9 +24,23 @@
   <simple-section id="projectAction" class="bg-[--blue-] text-white">
     <h2>Strategic consulting initiatives</h2>
     <p class="text-xl w-full md:w-2/3 lg:w-1/2">
-      InterMobility provides you with expert guidance and support to ensure your projects are
-      delivered on time and on target. Let's discuss how we can boost your project's success.
+      Intermobility provides consulting support for any type of teams and any type of projects to
+      ensure your projects are moving forward, on time :
     </p>
+    <ul class="text-xl w-full md:w-2/3 lg:w-1/2 list-disc text-start ms-40">
+      <li>C-Level interim</li>
+      <li>Strategic support to expansion</li>
+      <li>Sales, Marketing and Finance support</li>
+      <li>Pricing & Cost adequation</li>
+      <li>Public Affairs</li>
+    </ul>
+    <p class="text-xl w-full md:w-2/3 lg:w-1/2">
+      Intermobility can also support your team’s growth through its large network :
+    </p>
+    <ul class="text-xl w-full md:w-2/3 lg:w-1/2 list-disc text-start ms-40">
+      <li>Interim</li>
+      <li>Recruitment</li>
+    </ul>
     <router-link-button pathName="contact" class="white_button"
       ><svg
         xmlns="http://www.w3.org/2000/svg"

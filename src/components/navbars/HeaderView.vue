@@ -115,34 +115,36 @@
             <li
               class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
             >
-              <router-link
-                :to="{ name: 'home' }"
-                v-scroll-to="'#engagements'"
-                @click="store.setCurrentSlide(0)"
-                >Webinars</router-link
-              >
+              <router-link :to="{ name: 'webinars' }">Webinars</router-link>
             </li>
             <li class="lg:border lg:border-white"></li>
             <li
               class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
             >
-              <router-link
-                :to="{ name: 'home' }"
-                v-scroll-to="'#engagements'"
-                @click="store.setCurrentSlide(1)"
-                >Conferences</router-link
-              >
+              <router-link :to="{ name: 'conferences' }">Conferences</router-link>
             </li>
             <li class="lg:border lg:border-white"></li>
             <li
               class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
             >
-              <router-link
-                :to="{ name: 'home' }"
-                v-scroll-to="'#engagements'"
-                class="text-nowrap"
-                @click="store.setCurrentSlide(2)"
+              <router-link :to="{ name: 'whitePapers' }" class="text-nowrap"
                 >Reports & White papers</router-link
+              >
+            </li>
+            <li class="lg:border lg:border-white"></li>
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'cercleCime' }" class="text-nowrap"
+                >Cercle CiME</router-link
+              >
+            </li>
+            <li class="lg:border lg:border-white"></li>
+            <li
+              class="py-4 px-4 text-left lg:text-center hover:text-black hover:bg-white rounded lg:rounded-none"
+            >
+              <router-link :to="{ name: 'plugAndPlay' }" class="text-nowrap"
+                >Plug & Play</router-link
               >
             </li>
           </ul>
@@ -299,9 +301,6 @@ window.addEventListener('resize', () => {
     menuIsOpen.value = false
   }
 })
-
-import { useMobilityStore } from '@/stores'
-const store = useMobilityStore()
 </script>
 
 <style scoped>

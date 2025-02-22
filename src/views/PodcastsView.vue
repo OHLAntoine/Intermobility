@@ -9,7 +9,7 @@
   </simple-section>
   <double-section
     v-for="(podcastPlayer, index) in store.podcastPlayers"
-    :key="`podacast-${index}`"
+    :key="`podcast-${index}`"
     :class="{
       bgWhite: !store.numberIsPair(index),
       bgBlue: store.numberIsPair(index),
