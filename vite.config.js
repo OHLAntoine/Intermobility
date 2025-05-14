@@ -13,5 +13,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  base: env.NODE_ENV === 'production' ? '/Intermobility/' : '/',
+  base: env.NODE_ENV === 'production' ? '/' : '/',
 })
