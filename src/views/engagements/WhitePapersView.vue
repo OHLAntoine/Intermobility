@@ -4,7 +4,7 @@
     <img
       src="@/assets/images/engagements/Guillermo-Campoamor.jpg"
       alt="Representation of our conference"
-      class="w-2/3 rounded object-cover"
+      class="w-full md:w-2/3 rounded object-cover"
     />
     <p class="text-xl">
       Intermobility supports redaction of one key report per year, normally dedicated to inclusion

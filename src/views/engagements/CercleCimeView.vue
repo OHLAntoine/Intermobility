@@ -4,7 +4,7 @@
     <img
       src="@/assets/images/engagements/cercleCime.png"
       alt="Representation of our conference"
-      class="w-2/3 rounded object-cover"
+      class="w-full md:w-2/3 rounded object-cover"
     />
     <p class="text-xl">
       Intermobility is advocating for a cleaner, safer and more inclusive mobility & transportation

@@ -2,9 +2,9 @@
   <simple-section>
     <h2>The innovation inside the Smart Cities with Plug & Play</h2>
     <img
-      src="@/assets/images/engagements/PlugAndPlay.jpg"
+      src="@/assets/images/engagements/PlugAndPlay2.jpg"
       alt="Representation of our conference"
-      class="w-2/3 rounded object-cover"
+      class="w-full md:w-2/3 rounded object-cover"
     />
     <p class="text-xl">
       Intermobility is partnering with Plug & Play Tech Center, one of the major actor of the

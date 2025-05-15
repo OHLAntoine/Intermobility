@@ -1,16 +1,16 @@
 <template>
   <simple-section>
     <h2>Our conferences engagements</h2>
-    <div class="flex flex-col lg:flex-row gap-8 justify-center">
+    <div class="flex flex-col lg:flex-row gap-8 justify-center items-center">
       <img
         src="@/assets/images/engagements/conference2.jpg"
         alt="Representation of our conference"
-        class="w-2/5 rounded object-cover"
+        class="w-full lg:w-2/5 lg:h-96 rounded object-cover"
       />
       <img
         src="@/assets/images/engagements/event2.jpg"
         alt="Representation of our conference"
-        class="w-2/5 rounded object-cover"
+        class="w-full lg:w-2/5 lg:h-96 rounded object-cover"
       />
     </div>
     <p class="text-xl">

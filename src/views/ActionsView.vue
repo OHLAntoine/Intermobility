@@ -27,7 +27,7 @@
       Intermobility provides consulting support for any type of teams and any type of projects to
       ensure your projects are moving forward, on time :
     </p>
-    <ul class="text-xl w-full md:w-2/3 lg:w-1/2 list-disc text-start ms-40">
+    <ul class="text-xl w-full md:w-2/3 lg:w-1/2 list-disc text-start ms-20 md:ms-40 lg:ms-60">
       <li>C-Level interim</li>
       <li>Strategic support to expansion</li>
       <li>Sales, Marketing and Finance support</li>
@@ -37,7 +37,7 @@
     <p class="text-xl w-full md:w-2/3 lg:w-1/2">
       Intermobility can also support your team’s growth through its large network :
     </p>
-    <ul class="text-xl w-full md:w-2/3 lg:w-1/2 list-disc text-start ms-40">
+    <ul class="text-xl w-full md:w-2/3 lg:w-1/2 list-disc text-start ms-20 md:ms-40 lg:ms-60">
       <li>Interim</li>
       <li>Recruitment</li>
     </ul>
